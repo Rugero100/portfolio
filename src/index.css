@@ -24,6 +24,28 @@ body.light-mode {
   background-color: #f8f5ec;
 }
 
+body.light-mode .text-white,
+body.light-mode .text-stone-100,
+body.light-mode .text-stone-200,
+body.light-mode .text-stone-300,
+body.light-mode .text-stone-400 {
+  color: #292216;
+}
+
+body.light-mode .text-stone-500,
+body.light-mode .text-stone-600 {
+  color: #655a47;
+}
+
+body.light-mode .text-amber-300,
+body.light-mode .text-amber-400 {
+  color: #8a5b00;
+}
+
+body.light-mode .gradient-text {
+  @apply from-amber-700 via-yellow-700 to-amber-800;
+}
+
 /* Glassmorphism utility */
 .glass {
   @apply bg-white/5 backdrop-blur-xl border border-amber-200/10 shadow-xl;
@@ -50,6 +72,21 @@ body.light-mode .glass {
   );
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
+}
+
+body.light-mode .animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    #f8f5ec,
+    #f3ead4,
+    #eee2c5,
+    #f7f0df,
+    #f8f5ec
+  );
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+  background-color: #eee7d8;
 }
 
 @keyframes gradientShift {
