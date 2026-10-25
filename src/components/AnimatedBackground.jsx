@@ -15,7 +15,7 @@ export default function AnimatedBackground() {
           scale: [1, 1.2, 1],
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 -left-32 w-96 h-96 bg-amber-600/20 rounded-full blur-3xl"
+        className="absolute top-1/4 -left-32 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -24,7 +24,7 @@ export default function AnimatedBackground() {
           scale: [1, 1.1, 1],
         }}
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 right-0 w-80 h-80 bg-yellow-600/25 rounded-full blur-3xl"
+        className="absolute top-1/2 right-0 w-80 h-80 bg-yellow-600/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -32,7 +32,7 @@ export default function AnimatedBackground() {
           y: [0, 80, 0],
         }}
         transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-0 left-1/3 w-72 h-72 bg-amber-500/15 rounded-full blur-3xl"
+        className="absolute bottom-0 left-1/3 w-72 h-72 bg-amber-500/6 rounded-full blur-3xl"
       />
 
       {/* Subtle grid overlay */}
