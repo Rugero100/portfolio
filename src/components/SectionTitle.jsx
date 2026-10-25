@@ -11,7 +11,7 @@ export default function SectionTitle({ subtitle, title, description }) {
       className="text-center mb-14 md:mb-16"
     >
       {subtitle && (
-        <span className="text-sm font-semibold tracking-widest uppercase text-indigo-400 mb-3 block">
+        <span className="text-sm font-semibold tracking-widest uppercase text-amber-400 mb-3 block">
           {subtitle}
         </span>
       )}
@@ -19,7 +19,7 @@ export default function SectionTitle({ subtitle, title, description }) {
         <span className="gradient-text">{title}</span>
       </h2>
       {description && (
-        <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg">
+        <p className="text-stone-400 max-w-2xl mx-auto text-base md:text-lg">
           {description}
         </p>
       )}

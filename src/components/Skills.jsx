@@ -32,22 +32,22 @@ const skillIconMap = {
 
 const skillColors = {
   html: "text-orange-500",
-  css: "text-blue-500",
+  css: "text-amber-500",
   javascript: "text-yellow-400",
-  react: "text-cyan-400",
+  react: "text-yellow-400",
   tailwind: "text-teal-400",
-  php: "text-indigo-400",
+  php: "text-amber-400",
   laravel: "text-red-500",
-  mysql: "text-blue-400",
+  mysql: "text-amber-400",
   git: "text-orange-400",
-  github: "text-slate-300",
-  vscode: "text-blue-500",
+  github: "text-stone-300",
+  vscode: "text-amber-500",
   xampp: "text-orange-600",
 };
 
 function SkillCard({ skill, index }) {
   const Icon = skillIconMap[skill.icon];
-  const color = skillColors[skill.icon] || "text-indigo-400";
+  const color = skillColors[skill.icon] || "text-amber-400";
 
   return (
     <GlassCard delay={index * 0.05} className="group">
@@ -59,7 +59,7 @@ function SkillCard({ skill, index }) {
         >
           {Icon && <Icon />}
         </motion.div>
-        <span className="font-medium text-slate-200 group-hover:text-white transition-colors">
+        <span className="font-medium text-stone-200 group-hover:text-white transition-colors">
           {skill.name}
         </span>
       </div>
@@ -71,7 +71,7 @@ function SkillCategory({ title, items }) {
   return (
     <div className="mb-12 last:mb-0">
       <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-3">
-        <span className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded" />
+        <span className="w-8 h-0.5 bg-gradient-to-r from-amber-500 to-yellow-500 rounded" />
         {title}
       </h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

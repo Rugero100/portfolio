@@ -3,9 +3,9 @@
 /* Custom theme variables */
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-primary: #6366f1;
-  --color-secondary: #8b5cf6;
-  --color-accent: #3b82f6;
+  --color-primary: #d4af37;
+  --color-secondary: #e6c15a;
+  --color-accent: #b8860b;
 }
 
 /* Base styles */
@@ -14,37 +14,39 @@ html {
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 antialiased overflow-x-hidden;
+  @apply text-stone-100 antialiased overflow-x-hidden;
+  background-color: #0c0a07;
   font-family: var(--font-sans);
 }
 
 body.light-mode {
-  @apply bg-slate-50 text-slate-900;
+  @apply text-stone-900;
+  background-color: #f8f5ec;
 }
 
 /* Glassmorphism utility */
 .glass {
-  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl;
+  @apply bg-white/5 backdrop-blur-xl border border-amber-200/10 shadow-xl;
 }
 
 body.light-mode .glass {
-  @apply bg-white/70 border-slate-200/80 shadow-slate-200/50;
+  @apply bg-white/75 border-amber-900/15 shadow-amber-950/10;
 }
 
 /* Gradient text */
 .gradient-text {
-  @apply bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-yellow-200 via-amber-400 to-yellow-600 bg-clip-text text-transparent;
 }
 
 /* Animated gradient background */
 .animated-gradient {
   background: linear-gradient(
     -45deg,
-    #0f172a,
-    #1e1b4b,
-    #172554,
-    #312e81,
-    #0f172a
+    #0c0a07,
+    #17120a,
+    #211807,
+    #2a200d,
+    #0c0a07
   );
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
@@ -68,15 +70,15 @@ body.light-mode .glass {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  @apply bg-stone-950;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-indigo-600/50 rounded-full;
+  @apply bg-amber-500/50 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-indigo-500;
+  @apply bg-amber-400;
 }
 
 /* Section padding helper */

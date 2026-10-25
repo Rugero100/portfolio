@@ -26,7 +26,7 @@ export default function ScrollToTop() {
             to="home"
             smooth={true}
             duration={500}
-            className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30 cursor-pointer hover:shadow-indigo-500/50 transition-shadow"
+            className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 text-white shadow-lg shadow-amber-500/30 cursor-pointer hover:shadow-amber-500/50 transition-shadow"
             aria-label="Scroll to top"
           >
             <HiArrowUp className="text-xl" />

@@ -35,14 +35,14 @@ export default function Services() {
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
-                  className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center mb-5"
+                  className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500/20 to-yellow-500/20 flex items-center justify-center mb-5"
                 >
-                  <Icon className="text-2xl text-indigo-400" />
+                  <Icon className="text-2xl text-amber-400" />
                 </motion.div>
                 <h3 className="text-lg font-bold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-stone-400 text-sm leading-relaxed">
                   {service.description}
                 </p>
               </GlassCard>

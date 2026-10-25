@@ -9,7 +9,7 @@ export default function ThemeToggle({ isDark, toggleTheme }) {
       whileTap={{ scale: 0.95 }}
       onClick={toggleTheme}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      className="p-2.5 rounded-xl glass text-slate-300 hover:text-white transition-colors"
+      className="p-2.5 rounded-xl glass text-stone-300 hover:text-white transition-colors"
     >
       {isDark ? <HiSun className="text-xl" /> : <HiMoon className="text-xl" />}
     </motion.button>

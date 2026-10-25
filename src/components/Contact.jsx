@@ -100,7 +100,7 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors";
+    "w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-stone-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors";
 
   return (
     <section id="contact" className="section-padding">
@@ -118,17 +118,17 @@ export default function Contact() {
               <h3 className="text-lg font-bold text-white mb-4">
                 Let's talk
               </h3>
-              <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+              <p className="text-stone-400 text-sm mb-6 leading-relaxed">
                 I'm always open to discussing new projects, creative ideas, or
                 opportunities to be part of your vision.
               </p>
 
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors mb-6"
+                className="flex items-center gap-3 text-stone-300 hover:text-white transition-colors mb-6"
               >
-                <div className="p-3 rounded-xl bg-indigo-500/20">
-                  <FaEnvelope className="text-indigo-400" />
+                <div className="p-3 rounded-xl bg-amber-500/20">
+                  <FaEnvelope className="text-amber-400" />
                 </div>
                 <span className="text-sm">{personalInfo.email}</span>
               </a>
@@ -143,7 +143,7 @@ export default function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1, y: -3 }}
-                      className="p-3 rounded-xl glass text-slate-400 hover:text-white transition-colors"
+                      className="p-3 rounded-xl glass text-stone-400 hover:text-white transition-colors"
                       aria-label={social.name}
                     >
                       <Icon className="text-lg" />
@@ -159,7 +159,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm text-slate-400 mb-2">
+                  <label htmlFor="name" className="block text-sm text-stone-400 mb-2">
                     Your Name
                   </label>
                   <input
@@ -174,7 +174,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm text-slate-400 mb-2">
+                  <label htmlFor="email" className="block text-sm text-stone-400 mb-2">
                     Your Email
                   </label>
                   <input
@@ -191,7 +191,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm text-slate-400 mb-2">
+                <label htmlFor="subject" className="block text-sm text-stone-400 mb-2">
                   Subject
                 </label>
                 <input
@@ -207,7 +207,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm text-slate-400 mb-2">
+                <label htmlFor="message" className="block text-sm text-stone-400 mb-2">
                   Message
                 </label>
                 <textarea
@@ -241,7 +241,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold disabled:opacity-60 disabled:cursor-not-allowed"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-600 text-stone-950 font-semibold disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 <FaPaperPlane />
                 {isSubmitting ? "Sending..." : "Send Message"}

@@ -28,7 +28,7 @@ export default function Navbar({ activeSection, isDark, toggleTheme }) {
           offset={-80}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-sm">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center font-bold text-white text-sm">
             RB
           </div>
           <span className="font-semibold text-white hidden sm:block">
@@ -48,8 +48,8 @@ export default function Navbar({ activeSection, isDark, toggleTheme }) {
                 offset={-80}
                 className={`px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-all duration-300 ${
                   activeSection === link.id
-                    ? "text-white bg-indigo-600/30"
-                    : "text-slate-400 hover:text-white hover:bg-white/5"
+                    ? "text-white bg-amber-600/30"
+                    : "text-stone-400 hover:text-white hover:bg-white/5"
                 }`}
               >
                 {link.label}
@@ -93,8 +93,8 @@ export default function Navbar({ activeSection, isDark, toggleTheme }) {
                     onClick={closeMenu}
                     className={`block px-6 py-3 text-sm font-medium cursor-pointer transition-colors ${
                       activeSection === link.id
-                        ? "text-white bg-indigo-600/20"
-                        : "text-slate-400 hover:text-white"
+                        ? "text-white bg-amber-600/20"
+                        : "text-stone-400 hover:text-white"
                     }`}
                   >
                     {link.label}

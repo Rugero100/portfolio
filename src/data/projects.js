@@ -20,7 +20,7 @@ export const projects = [
     github: "https://github.com/Rugero100/scl-management",
     demo: "#",
     image: "student",
-    gradient: "from-blue-500 to-indigo-600",
+    gradient: "from-amber-500 to-amber-600",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const projects = [
     github: "https://github.com/Rugero100/Firstpp",
     demo: "#",
     image: "dashboard",
-    gradient: "from-purple-500 to-violet-600",
+    gradient: "from-yellow-500 to-amber-600",
   },
   {
     id: 4,
@@ -42,6 +42,6 @@ export const projects = [
     github: "https://github.com/Rugero100",
     demo: "#",
     image: "portfolio",
-    gradient: "from-cyan-500 to-blue-600",
+    gradient: "from-yellow-500 to-amber-600",
   },
 ];

@@ -42,7 +42,7 @@ export default function About() {
                 className="rounded-2xl w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-full blur-2xl" />
           </motion.div>
 
           {/* Bio */}
@@ -51,7 +51,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-slate-300 leading-relaxed mb-6 text-base md:text-lg"
+              className="text-stone-300 leading-relaxed mb-6 text-base md:text-lg"
             >
               {personalInfo.bio}
             </motion.p>
@@ -69,7 +69,7 @@ export default function About() {
                 {interests.map((interest) => (
                   <span
                     key={interest}
-                    className="px-4 py-2 rounded-full glass text-sm text-indigo-300"
+                    className="px-4 py-2 rounded-full glass text-sm text-amber-300"
                   >
                     {interest}
                   </span>
@@ -84,11 +84,11 @@ export default function About() {
                 return (
                   <GlassCard key={stat.label} delay={index * 0.1} hover={false}>
                     <div className="text-center">
-                      <Icon className="text-2xl text-indigo-400 mx-auto mb-2" />
+                      <Icon className="text-2xl text-amber-400 mx-auto mb-2" />
                       <p className="text-2xl md:text-3xl font-bold gradient-text">
                         {stat.value}
                       </p>
-                      <p className="text-xs text-slate-400 mt-1">{stat.label}</p>
+                      <p className="text-xs text-stone-400 mt-1">{stat.label}</p>
                     </div>
                   </GlassCard>
                 );

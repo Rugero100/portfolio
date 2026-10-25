@@ -20,7 +20,7 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-slate-400 text-sm text-center md:text-left"
+          className="text-stone-400 text-sm text-center md:text-left"
         >
           © {year}{" "}
           <span className="text-white font-medium">{personalInfo.name}</span>.
@@ -37,7 +37,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.15, y: -3 }}
-                className="p-3 rounded-xl glass text-slate-400 hover:text-white transition-colors"
+                className="p-3 rounded-xl glass text-stone-400 hover:text-white transition-colors"
                 aria-label={social.name}
               >
                 <Icon className="text-lg" />

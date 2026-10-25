@@ -29,13 +29,13 @@ export default function Hero() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 opacity-60 blur-sm"
+                className="absolute -inset-4 rounded-full bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 opacity-60 blur-sm"
               />
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full p-1.5 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 shadow-2xl shadow-indigo-500/30">
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full p-1.5 bg-gradient-to-br from-yellow-300 via-amber-500 to-yellow-700 shadow-2xl shadow-amber-500/30">
                 <img
                   src={profileImage}
                   alt={personalInfo.name}
-                  className="w-full h-full rounded-full object-cover object-top border-4 border-slate-900"
+                  className="w-full h-full rounded-full object-cover object-top border-4 border-stone-900"
                 />
               </div>
               {/* Status badge */}
@@ -62,7 +62,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-indigo-400 font-medium mb-3 tracking-wide"
+              className="text-amber-400 font-medium mb-3 tracking-wide"
             >
               Hello, I'm
             </motion.p>
@@ -73,18 +73,18 @@ export default function Hero() {
 
             {/* Typing effect */}
             <div className="h-10 md:h-12 mb-4">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-300">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-stone-300">
                 {typedText}
-                <span className="animate-pulse text-indigo-400">|</span>
+                <span className="animate-pulse text-amber-400">|</span>
               </h2>
             </div>
 
-            <p className="text-slate-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-4">
+            <p className="text-stone-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-4">
               {personalInfo.tagline}
             </p>
 
-            <p className="flex items-center justify-center lg:justify-start gap-2 text-slate-500 text-sm mb-8">
-              <FaMapMarkerAlt className="text-indigo-400" />
+            <p className="flex items-center justify-center lg:justify-start gap-2 text-stone-500 text-sm mb-8">
+              <FaMapMarkerAlt className="text-amber-400" />
               {personalInfo.country} · {personalInfo.status}
             </p>
 
@@ -95,7 +95,7 @@ export default function Hero() {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold cursor-pointer hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 hover:scale-105"
+                className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-600 text-stone-950 font-semibold cursor-pointer hover:shadow-lg hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105"
               >
                 View Projects
               </Link>
@@ -116,7 +116,7 @@ export default function Hero() {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="flex items-center gap-2 px-6 py-3 rounded-xl border border-indigo-500/50 text-indigo-300 font-semibold cursor-pointer hover:bg-indigo-500/10 transition-all duration-300 hover:scale-105"
+                className="flex items-center gap-2 px-6 py-3 rounded-xl border border-amber-500/50 text-amber-300 font-semibold cursor-pointer hover:bg-amber-500/10 transition-all duration-300 hover:scale-105"
               >
                 <HiMail />
                 Contact Me

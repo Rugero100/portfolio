@@ -52,7 +52,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+                <p className="text-stone-400 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -61,7 +61,7 @@ export default function Projects() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20"
+                      className="px-3 py-1 text-xs rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20"
                     >
                       {tech}
                     </span>
@@ -87,7 +87,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-sm text-white font-medium"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-600 text-stone-950 text-sm font-medium"
                   >
                     <FaExternalLinkAlt className="text-xs" />
                     Live Demo
