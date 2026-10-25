@@ -27,7 +27,7 @@ Message:
 {{message}}
 ```
 
-3. Set **To Email** to your address (or use `{{to_email}}`)
+3. Set **To Email** to `{{to_email}}` so messages go to the portfolio inbox, or enter that inbox address directly.
 4. Copy the **Template ID** (e.g. `template_xyz789`)
 
 ## 4. Get your Public Key

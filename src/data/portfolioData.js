@@ -4,7 +4,7 @@ export const personalInfo = {
   role: "Full Stack Developer",
   status: "Software Development Student",
   country: "Rwanda",
-  email: "rugerobonheur@example.com",
+  email: "rugerobonheur@gmail.com",
   tagline:
     "Building modern, responsive web applications with passion and precision.",
   bio: `I'm Rugero Bonheur, a passionate Software Development student from Rwanda on a journey to become a skilled Full Stack Developer. I love turning ideas into clean, functional web experiences using React, Laravel, and modern tools. Every project I build pushes me closer to my goal of creating software that makes a real difference.`,

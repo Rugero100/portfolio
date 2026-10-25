@@ -41,28 +41,14 @@ export default function Contact() {
     setIsSubmitting(true);
     setStatus({ type: "", message: "" });
 
-    // EmailJS configuration — replace with your credentials from https://www.emailjs.com/
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    // Fallback: open email app when EmailJS keys are not set yet
     if (!serviceId || !templateId || !publicKey) {
-      const body = [
-        `Name: ${formData.name}`,
-        `Email: ${formData.email}`,
-        "",
-        formData.message,
-      ].join("\n");
-
-      window.location.href = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-        formData.subject
-      )}&body=${encodeURIComponent(body)}`;
-
       setStatus({
-        type: "success",
-        message:
-          "Opening your email app to send the message. To enable in-form sending, add EmailJS keys to a .env file (see EMAILJS_SETUP.md).",
+        type: "error",
+        message: `Message could not be sent. Please email ${personalInfo.email} directly.`,
       });
       setIsSubmitting(false);
       return;
